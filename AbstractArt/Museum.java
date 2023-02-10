@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class Museum {
     public static void main(String[] args) {
+        // ------START:Array List format------
         ArrayList<Art> museum = new ArrayList<Art>();
         museum.add(new Painting("The wanderer", "John Pierre",
                 "Set in the 1960's, it depicts the struggle between man and machine", "Oil canvas"));
@@ -13,6 +14,9 @@ public class Museum {
                 "Sand and Twigs"));
         museum.add(new Sculpture("The Dean", "Ashley King", "Depicts the dean of a small-town school",
                 "Marble"));
+        // ------END:Array List format------
+
+        // ------START:Non Array List format------
         // Painting wanderer = new Painting("The wanderer", "John Pierre",
         // "Set in the 1960's, it depicts the struggle between man and machine", "Oil
         // canvas");
@@ -35,6 +39,7 @@ public class Museum {
         // System.out.println("\n-------Sculptures--------");
         // johnny.viewArt();
         // dean.viewArt();
+        // ------END:Non Array List format------
 
         for (Art artCollective : museum) {
             artCollective.viewArt();
